@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      Git笔记
-subtitle:   推送到GitHub
-date:       2019-10-21
+title:      手写promise和双向数据绑定
+subtitle:   简单版
+date:       2019-10-22
 author:     HCX
-header-img: img/post-bg-2015.jpg
+header-img: img/post-bg-ioses.jpg
 catalog: true
 tags:
     - Git
