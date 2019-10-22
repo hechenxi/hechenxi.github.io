@@ -39,7 +39,8 @@ p.then(value=>{console.log(value)},reason=>{console.log(reason)})
 //输出 1 2
 ```
 #### 我们的实现
-MyPromise函数执行完后**status肯定变成resolved或者rejected**，
+MyPromise函数执行完后**status肯定变成resolved或者rejected**
+
 ```js
 function MyPromise(executor){
 	this.status = 'pending'
@@ -62,9 +63,11 @@ MyPromise.prototype.then = function(fillfuledCallback,rejectedCallback){
 	else if (this.status === 'rejected') rejectedCallback(this.reason)
 }
 ```
+
 ### 3. 异步情况
 ### 4. reslve和reject都是异步最后执行的
 ### 5. 完整代码
+
 ```js
 function MyPromise(executor){
 	this.status = 'pending' //
