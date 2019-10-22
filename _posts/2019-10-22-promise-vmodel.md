@@ -8,8 +8,8 @@ header-img: img/post-bg-ioses.jpg
 catalog: true
 tags:
     - JavaScript
-		- Vue
 ---
+
 ## 手写Promise
 > 先修知识：原生Promise的基本使用
 ### 1. 基本框架:
@@ -246,5 +246,4 @@ MyPromise.prototype.then = function(fillfuledCallback,rejectedCallback){
 		</script>
 	</body>
 </html>
-
 ```
