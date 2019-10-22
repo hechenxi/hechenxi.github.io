@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      手写promise和双向数据绑定
-subtitle:   简单版
+subtitle:   diff算法简单原理
 date:       2019-10-22
 author:     HCX
 header-img: img/post-bg-ioses.jpg
@@ -250,3 +250,12 @@ MyPromise.prototype.then = function(fillfuledCallback,rejectedCallback){
 	</body>
 </html>
 ```
+## Vue diff算法简单原理
+> 虚拟dom：用简单的js对象模拟复杂的真实dom对象
+### 1. 作用：减少更新量，只更新差异部分DOM
+### 2. 做法：逐层对比新旧虚拟dom（看父节点是否相同）
+### 如果新旧节点相同，再去对比他们的子节点
+### 3. diff比较逻辑：
+#### 3.1 先找不需要移动的相同节点
+#### 3.2 再找相同但需要移动的节点
+#### 3.3 找不到，再新建或删除节点
